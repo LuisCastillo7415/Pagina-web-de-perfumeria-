@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KatarinaLuxury - Contacto</title>
+
+    <link rel="stylesheet" href="../style.css"> 
+
+    <link rel="stylesheet" href="contacto.css"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="../JS/menu.js" defer></script> 
+
+    <link rel="icon" href="../IMAGENES/PORTADA.png"> 
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+    <script src="../JS/includeHeader.js"></script>
+
+    <nav class="barra">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="#">Fragancias</a></li>
+            <li class="menu-catalogo">
+                <a href="#" class="catalogo-link">Catálogos</a>
+                <ul class="submenu">
+                    <li><a href="../CATALOGOS/catalogo-mujer.html">Mujer</a></li>
+                    <li><a href="../CATALOGOS/catalogo-hombre.html">Hombre</a></li>
+                    <li><a href="../CATALOGOS/catalogo-unisex.html">Unisex</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="contacto.html">Contacto</a></li> </ul>
+    </nav>
+
+    <main class="contact-main">
+        
+        <div class="titulo-contacto">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para responder todas tus preguntas sobre fragancias, pedidos y más.</p>
+        </div>
+
+        <section class="contacto-seccion">
+
+            <div class="info-contacto">
+                <h2>Información de KatarinaLuxury</h2>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Av. 7ma, Neiva - Huila, Colombia</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+57 3007285554 (Lunes a Viernes, 9am - 6pm)</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>KatarinaLxry@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-instagram"></i>
+                    <p>@KatarinaLxry</p>
+                </div>
+
+                <h2 class="mapa-titulo">Nuestra Ubicación</h2>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9972740251846!2d-74.0721!3d4.6097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a5e82531e1%3A0xf63a032c525f6e3!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sco!4v1699999999999!5m2!1ses!2sco"
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="formulario-contacto-container">
+                <h2>Envíanos un Mensaje</h2>
+                <form class="formulario-contacto" action="#" method="POST">
+                    
+                    <div class="form-grupo">
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="asunto">Asunto:</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Selecciona un Asunto</option>
+                            <option value="consulta">Consulta General</option>
+                            <option value="pedido">Pregunta sobre un Pedido</option>
+                            <option value="devolucion">Devoluciones o Garantías</option>
+                            <option value="personalizacion">Personalización</option>
+                        </select>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="boton-enviar">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                    </button>
+                    
+                </form>
+            </div>
+
+        </section>
+        
+    </main>
+    </body>
+
+</html>

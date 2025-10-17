@@ -1,0 +1,161 @@
+
+
+.contact-main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.titulo-contacto {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-contacto h1 {
+    font-size: 3em;
+    color: white; 
+    margin-bottom: 10px;
+}
+
+.titulo-contacto p {
+    color: #a0a0a0; 
+    font-size: 1.1em;
+}
+
+.contacto-seccion {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap; 
+}
+
+
+.info-contacto {
+    flex: 1;
+    min-width: 300px;
+    padding: 25px;
+    background-color: #1a1a1a; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05); 
+    color: white; 
+}
+
+.info-contacto h2 {
+    color: #fff; 
+    border-bottom: 2px solid #3f3500; 
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #ccc; 
+}
+
+.info-item i {
+    font-size: 1.2em;
+    color: #3f3500; 
+    margin-right: 15px;
+    width: 20px; 
+    text-align: center;
+}
+
+
+.mapa-titulo {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: white;
+}
+iframe {
+    border-radius: 10px;
+}
+
+
+.formulario-contacto-container {
+    flex: 2;
+    min-width: 350px;
+    padding: 25px;
+}
+
+.formulario-contacto-container h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-grupo {
+    margin-bottom: 20px;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white; 
+}
+
+.form-grupo input[type="text"],
+.form-grupo input[type="email"],
+.form-grupo select,
+.form-grupo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #333;
+    background-color: #222; 
+    color: white; 
+    border-radius: 4px;
+    box-sizing: border-box; 
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.form-grupo input:focus,
+.form-grupo select:focus,
+.form-grupo textarea:focus {
+    border-color: #3f3500; 
+    outline: none;
+}
+
+.form-grupo textarea {
+    resize: vertical;
+}
+
+
+.boton-enviar {
+    background-color: #3f3500; 
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.boton-enviar:hover {
+    background-color: #5a4b00; /* Tono más claro del color de marca */
+}
+
+.boton-enviar i {
+    margin-right: 8px;
+}
+
+/* MEDIA QUERIES para móviles */
+@media (max-width: 768px) {
+    .contacto-seccion {
+        flex-direction: column;
+    }
+
+    .info-contacto, .formulario-contacto-container {
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+}
