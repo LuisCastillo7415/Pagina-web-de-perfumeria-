@@ -164,7 +164,7 @@ background-size: cover;
   transition: 0.5s ease;
 }
 
-.contenedor-productos {
+.grid-perfumes {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -173,30 +173,29 @@ background-size: cover;
   padding: 0 40px;
 }
 
-.producto {
+.tarjeta-perfume {
   background: #111; 
   border-radius: 16px;
   padding: 15px;
   width: 200px;
   text-align: left;
-  color:#fff;
+  color: #fff;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 25px rgba(240,201,51,0.15);
+  box-shadow: 0 5px 25px rgba(240, 201, 51, 0.15);
 }
 
-.producto:hover {
+.tarjeta-perfume:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 25px rgba(240,201,51,0.15)
+  box-shadow: 0 8px 25px rgba(240, 201, 51, 0.25);
 }
 
-.producto img {
+.tarjeta-perfume img {
   max-width: 100%;
   border-radius: 12px;
   margin-bottom: 10px;
 }
 
-.producto p{
-
+.tarjeta-perfume p {
   font-size: 14px;
   color: #ccc;
 }

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const headerContainer = document.getElementById("header-placeholder");
 
-  fetch("../COMPONENTES/header.html")
+  fetch("/PERFUMERIA/COMPONENTES/header.html")
     .then(response => response.text())
     .then(data => {
       headerContainer.innerHTML = data;
