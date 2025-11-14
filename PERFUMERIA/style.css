@@ -16,6 +16,7 @@ font-family: 'Poppins', 'Helvetica Neue', sans-serif;
 }
 
 
+
 .header-container {
   position: fixed;  
   top: 0;
@@ -250,12 +251,12 @@ nav ul li {
   z-index: 999;
 }
 
-/* Mostrar cuando JS añade la clase */
+
 .submenu.show {
-  display: block !important;
+  display: block;
 }
 
-/* Estilos de links */
+
 .submenu li a {
   color: #5f5016;
   display: block;
@@ -266,8 +267,122 @@ nav ul li {
   white-space:  nowrap;
 }
 
-/* Link activo */
+
 .submenu li a.active-sub {
   background: #fff;
   color: #000;
 }
+
+.detalle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  color: #fff;
+}
+
+.detalle-card {
+  display: flex;
+  gap: 30px;
+  background: #111;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 5px 25px rgba(240, 201, 51, 0.15);
+  max-width: 800px;
+}
+
+.detalle-card img {
+  width: 300px;
+  border-radius: 12px;
+}
+
+.detalle-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detalle-info button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #f0c933;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.link-producto {
+  text-decoration: none;     
+  color: inherit;            
+  display: block;          
+}
+
+.link-producto:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contenedor-volver {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#btn-volver {
+  background-color: #f0c933;
+  color: #111;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#btn-volver:hover {
+  background-color: #d4b122;
+}
+
+.sidebar-carrito {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100vh;
+    background: #111;
+    color: #fff;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.4);
+    transition: right 0.3s ease;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-carrito.activo {
+    right: 0;
+}
+
+.carrito-header {
+    padding: 20px;
+    background: #1b1b1b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cerrar-btn {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.carrito-items {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.carrito-footer {
+    padding: 20px;
+    border-top: 1px solid #333;
+    background: #1b1b1b;
+}
+
