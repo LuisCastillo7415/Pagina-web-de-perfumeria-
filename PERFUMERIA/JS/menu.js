@@ -30,10 +30,12 @@ document.addEventListener("DOMContentLoaded", () => {
     e.stopPropagation();
   });
 
-  document.addEventListener("click", () => {
-    submenu.classList.remove("show");
-  });
+  document.addEventListener("click", (e) => {
+    // SI el click es sobre el botón agregar al carrito, NO cerrar el menú
+    if (e.target.classList.contains("btn-agregar")) return;
 
+    submenu.classList.remove("show");
+});
 
   const subLinks = Array.from(submenu.querySelectorAll("a"));
   subLinks.forEach(a => {

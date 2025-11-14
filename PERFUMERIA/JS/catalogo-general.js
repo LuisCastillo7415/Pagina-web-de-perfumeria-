@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 div.classList.add("tarjeta-perfume");
 
                 div.innerHTML = `
-                   <a href="/perfumeria/componentes/detalle.html?id=${perfume.idperfume}" class="link-producto">
+                   <a href="/PERFUMERIA/componentes/detalle.html?id=${perfume.idperfume}" class="link-producto">
                     <img src="${perfume.imagen}" alt="${perfume.nombre}">
                     <h3>${perfume.nombre}</h3>
                     <p><strong>Marca:</strong> ${perfume.marca}</p>
